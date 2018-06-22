@@ -30,7 +30,7 @@ class Movies extends Component {
     return (
       <Fragment>
         {
-          this.props.movies.map(movie =>
+          this.props.movies && this.props.movies.map(movie =>
             <Movie
               key={movie.id}
               movieId={movie.id}
