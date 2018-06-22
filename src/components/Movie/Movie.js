@@ -4,12 +4,14 @@ import MovieDisplay from '../MovieDisplay/MovieDisplay'
 import MovieEdit from '../MovieEdit/MovieEdit'
 import Button from '../../common/Button/Button'
 
-const Movie = ({movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, handleMovieEdit}) => (
+const Movie = ({ movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, handleMovieEdit, handleCancelEditMovie, handleSaveMovie }) => (
   movieIdInEdit === movieId ?
     <MovieEdit
       movieTitle={movieTitle}
       movieYear={movieYear}
       movieGenre={movieGenre}
+      handleCancelEditMovie={handleCancelEditMovie}
+      handleSaveMovie={handleSaveMovie}
     /> :
     <Fragment>
       <MovieDisplay
@@ -19,7 +21,7 @@ const Movie = ({movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, handl
       />
       <Button
         text='Edit'
-        handleClick={handleMovieEdit}
+        handleClick={() => handleMovieEdit(movieId)}
       />
     </Fragment>
 )
@@ -30,7 +32,9 @@ Movie.propTypes = {
   movieYear: PropTypes.string.isRequired,
   movieGenre: PropTypes.string.isRequired,
   movieIdInEdit: PropTypes.string.isRequired,
-  handleMovieEdit: PropTypes.func.isRequired
+  handleMovieEdit: PropTypes.func.isRequired,
+  handleCancelEditMovie: PropTypes.func.isRequired,
+  handleSaveMovie: PropTypes.func.isRequired
 }
 
 export default Movie

@@ -12,7 +12,9 @@ describe('Movie', () => {
     movieYear: '2002',
     movieGenre: 'kids',
     movieIdInEdit: '5idh3l',
-    handleMovieEdit: jest.fn()
+    handleMovieEdit: jest.fn(),
+    handleCancelEditMovie: jest.fn(),
+    handleSaveMovie: jest.fn()
   }
   const editProps = {
     ...noEditProps,

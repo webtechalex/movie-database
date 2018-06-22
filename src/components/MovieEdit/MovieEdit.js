@@ -2,12 +2,15 @@ import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import SelectDropdown from '../../common/SelectDropdown/SelectDropDown'
 import TextInput from '../../common/TextInput/TextInput'
+import Button from '../../common/Button/Button'
 
 class MovieEdit extends Component {
   static propTypes = {
     movieTitle: PropTypes.string.isRequired,
     movieYear: PropTypes.string.isRequired,
-    movieGenre: PropTypes.string.isRequired
+    movieGenre: PropTypes.string.isRequired,
+    handleCancelEditMovie: PropTypes.func.isRequired,
+    handleSaveMovie: PropTypes.func.isRequired
   }
 
   constructor(props) {
@@ -37,8 +40,6 @@ class MovieEdit extends Component {
     })
   }
 
-  // TODO: Save and Cancel buttons
-
   render = () => (
     <Fragment>
       <TextInput
@@ -56,6 +57,14 @@ class MovieEdit extends Component {
         value=''
         handleChange={this.handleChangeMovieGenre}
         options={[]}
+      />
+      <Button
+        text='Cancel'
+        handleClick={this.props.handleCancelEditMovie}
+      />
+      <Button
+        text='Save'
+        handleClick={() => this.props.handleSaveMovie(this.state.movieTitle, this.state.movieYear, this.state.movieGenre)}
       />
     </Fragment>
   )

@@ -3,6 +3,7 @@ import { shallow } from 'enzyme'
 import MovieEdit from './MovieEdit'
 import SelectDropdown from '../../common/SelectDropdown/SelectDropDown'
 import TextInput from '../../common/TextInput/TextInput'
+import Button from '../../common/Button/Button'
 
 describe('MovieEdit', () => {
   const wrapper = shallow(
@@ -10,6 +11,8 @@ describe('MovieEdit', () => {
       movieTitle='A'
       movieYear='1984'
       movieGenre='action'
+      handleCancelEditMovie={jest.fn()}
+      handleSaveMovie={jest.fn()}
     />
   )
   const instance = wrapper.instance()
@@ -39,5 +42,8 @@ describe('MovieEdit', () => {
   it('updates state for movieGenre when handleChangeMovieGenre is called', () => {
     instance.handleChangeMovieGenre({ target: { value: 'comedy' } })
     expect(wrapper.state('movieGenre')).toBe('comedy')
+  })
+  it('renders two Button components', () => {
+    expect(wrapper.find(Button).length).toBe(2)
   })
 })
