@@ -5,6 +5,10 @@ import TextInput from '../../common/TextInput/TextInput'
 import Button from '../../common/Button/Button'
 
 class MovieFilterForm extends Component {
+  static propTypes = {
+    getMovies: PropTypes.func.isRequired
+  }
+
   constructor(props) {
     super(props)
     this.genreOptions = [
@@ -37,10 +41,6 @@ class MovieFilterForm extends Component {
       selectedGenre: '',
       selectedYear: ''
     }
-  }
-
-  static propTypes = {
-    getMovies: PropTypes.func.isRequired
   }
 
   handleChangeSelectedGenre = (event) => {
