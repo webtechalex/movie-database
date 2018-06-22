@@ -1,0 +1,74 @@
+[
+  {
+    "id": "34y09u",
+    "title": "Life of Brian",
+    "year": "1979",
+    "genre": "Comedy"
+  },
+  {
+    "id": "9tgfy6",
+    "title": "The Matrix",
+    "year": "1999",
+    "genre": "Sci-Fi"
+  },
+  {
+    "id": "23eyhu",
+    "title": "Up",
+    "year": "2009",
+    "genre": "Kids"
+  },
+  {
+    "id": "094hsa",
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "genre": "Drama"
+  },
+  {
+    "id": "38gfdn",
+    "title": "The Dark Knight",
+    "year": "2008",
+    "genre": "Action"
+  },
+  {
+    "id": "67bhrn",
+    "title": "Pulp Fiction",
+    "year": "1994",
+    "genre": "Drama"
+  },
+  {
+    "id": "56y78y",
+    "title": "Fight Club",
+    "year": "1999",
+    "genre": "Drama"
+  },
+  {
+    "id": "8vhn34",
+    "title": "The Lion King",
+    "year": "1994",
+    "genre": "Kids"
+  },
+  {
+    "id": "1g9v87",
+    "title": "Alien",
+    "year": "1979",
+    "genre": "Sci-Fi"
+  },
+  {
+    "id": "8ygrm5",
+    "title": "Toy Story",
+    "year": "1995",
+    "genre": "Kids"
+  },
+  {
+    "id": "87g4b2",
+    "title": "V for Vendetta",
+    "year": "2005",
+    "genre": "Action"
+  },
+  {
+    "id": "4jklrt",
+    "title": "The Big Lebowski",
+    "year": "1998",
+    "genre": "Comedy"
+  }
+]
