@@ -1,4 +1,4 @@
-#Movie Database
+# Movie Database
 
 This project requires Node.js and NPM in order to run.
 
