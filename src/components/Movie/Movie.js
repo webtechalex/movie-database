@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import MovieDisplay from '../MovieDisplay/MovieDisplay'
 import MovieEdit from '../MovieEdit/MovieEdit'
 import Button from '../../common/Button/Button'
+import './Movie.css'
 
 const Movie = ({ movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, handleMovieEdit, handleCancelEditMovie, handleSaveMovie }) => (
-  <li>{movieIdInEdit === movieId ?
+  <li className='movie-info'>{movieIdInEdit === movieId ?
     <MovieEdit
       movieTitle={movieTitle}
       movieYear={movieYear}
@@ -22,6 +23,7 @@ const Movie = ({ movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, hand
       <Button
         text='Edit'
         handleClick={() => handleMovieEdit(movieId)}
+        className='button-wide'
       />
     </Fragment>}
   </li>

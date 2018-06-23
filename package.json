@@ -9,7 +9,10 @@
     "build": "webpack"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+    "setupTestFrameworkScriptFile": "./src/setupTests.js",
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/mocks/styleMock.js"
+    }
   },
   "keywords": [],
   "author": "",

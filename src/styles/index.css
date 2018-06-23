@@ -6,3 +6,18 @@ html {
 body {
   margin: 0;
 }
+
+h3 {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 421px) {
+  .container {
+    width: 420px;
+    margin: 0 auto;
+  }
+}

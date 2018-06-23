@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Button.css'
 
-const Button = ({text, handleClick}) => (
-  <button onClick={handleClick}>{text}</button>
+const Button = ({text, handleClick, className}) => (
+  <button className={className} onClick={handleClick}>{text}</button>
 )
 
 Button.propTypes = {
