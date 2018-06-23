@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import SelectDropdown from '../../common/SelectDropdown/SelectDropDown'
+import SelectDropdown from '../../common/SelectDropdown/SelectDropdown'
 import TextInput from '../../common/TextInput/TextInput'
 import Button from '../../common/Button/Button'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import MovieEdit from './MovieEdit'
-import SelectDropdown from '../../common/SelectDropdown/SelectDropDown'
+import SelectDropdown from '../../common/SelectDropdown/SelectDropdown'
 import TextInput from '../../common/TextInput/TextInput'
 import Button from '../../common/Button/Button'
 

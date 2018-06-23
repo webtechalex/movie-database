@@ -4,9 +4,8 @@ import Movies from '../../components/Movies/Movies'
 import { saveMovie } from '../../redux/actions'
 
 const mapStateToProps = (state) => ({
-  movies: state.movies
+  movies: state
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({saveMovie}, dispatch)
-
 export default connect(mapStateToProps, mapDispatchToProps)(Movies)

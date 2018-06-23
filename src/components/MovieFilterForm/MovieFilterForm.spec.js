@@ -25,7 +25,7 @@ describe('MovieFilterForm', () => {
     const genreOptions = [
       {
         display: 'All',
-        value: 'all'
+        value: ''
       },
       {
         display: 'Action',

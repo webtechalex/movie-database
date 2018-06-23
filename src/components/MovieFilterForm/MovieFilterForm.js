@@ -14,7 +14,7 @@ class MovieFilterForm extends Component {
     this.genreOptions = [
       {
         display: 'All',
-        value: 'all'
+        value: ''
       },
       {
         display: 'Action',
@@ -63,12 +63,12 @@ class MovieFilterForm extends Component {
     return (
       <Fragment>
         <SelectDropdown
-          value=''
+          value={this.state.selectedGenre}
           handleChange={this.handleChangeSelectedGenre}
           options={this.genreOptions}
         />
         <TextInput
-          value=''
+          value={this.state.selectedYear}
           handleChange={this.handleChangeSelectedYear}
         />
         <Button

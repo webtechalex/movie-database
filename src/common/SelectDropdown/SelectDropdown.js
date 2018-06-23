@@ -13,7 +13,7 @@ const SelectDropdown = ({value, options, handleChange, label}) => (
     >
       {
         options.map((option, index) => (
-          <option key={index}>{option.display}</option>
+          <option key={index} value={option.value}>{option.display}</option>
         ))
       }
     </select>

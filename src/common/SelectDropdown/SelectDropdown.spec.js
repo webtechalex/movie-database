@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import SelectDropdown from './SelectDropDown'
+import SelectDropdown from './SelectDropdown'
 
 describe('SelectDropdown component', () => {
   const selectOptions = [
