@@ -3,6 +3,7 @@ import MovieFilterFormContainer from '../MovieFilterFormContainer/MovieFilterFor
 import MoviesContainer from '../MoviesContainer/MoviesContainer'
 const App = () => (
   <div className='container'>
+    <h1>Movie Database</h1>
     <MovieFilterFormContainer />
     <MoviesContainer />
   </div>
