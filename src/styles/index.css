@@ -11,6 +11,10 @@ h3 {
   margin: 0px;
 }
 
+ul {
+  padding: 0px;
+}
+
 .container {
   width: 100%;
 }
