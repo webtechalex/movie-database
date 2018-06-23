@@ -10,6 +10,7 @@ class Movies extends Component {
   }
 
   handleMovieEdit = (movieIdInEdit) => {
+    console.log(movieIdInEdit)
     this.setState({
       movieIdInEdit
     })
@@ -37,7 +38,7 @@ class Movies extends Component {
               movieTitle={movie.title}
               movieYear={movie.year}
               movieGenre={movie.genre}
-              movieIdInEdit=''
+              movieIdInEdit={this.state.movieIdInEdit}
               handleMovieEdit={this.handleMovieEdit}
               handleCancelEditMovie={this.handleCancelEditMovie}
               handleSaveMovie={this.handleSaveMovie}

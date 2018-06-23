@@ -20,9 +20,36 @@ class MovieEdit extends Component {
       movieYear: props.movieYear,
       movieGenre: props.movieGenre
     }
+    this.genreOptions = [
+      {
+        display: 'All',
+        value: ''
+      },
+      {
+        display: 'Action',
+        value: 'action'
+      },
+      {
+        display: 'Comedy',
+        value: 'comedy'
+      },
+      {
+        display: 'Drama',
+        value: 'drama'
+      },
+      {
+        display: 'Kids',
+        value: 'kids'
+      },
+      {
+        display: 'Sci-Fi',
+        value: 'sci-fi'
+      }
+    ]
   }
 
   handleChangeMovieTitle = (event) => {
+    console.log(event.target)
     this.setState({
       movieTitle: event.target.value
     })
@@ -44,19 +71,19 @@ class MovieEdit extends Component {
     <Fragment>
       <TextInput
         label='Title'
-        value=''
+        value={this.state.movieTitle}
         handleChange={this.handleChangeMovieTitle}
       />
       <TextInput
         label='Year'
-        value=''
+        value={this.state.movieYear}
         handleChange={this.handleChangeMovieYear}
       />
       <SelectDropdown
         label='Genre'
-        value=''
+        value={this.state.movieGenre}
         handleChange={this.handleChangeMovieGenre}
-        options={[]}
+        options={this.genreOptions}
       />
       <Button
         text='Cancel'
