@@ -49,7 +49,6 @@ class MovieEdit extends Component {
   }
 
   handleChangeMovieTitle = (event) => {
-    console.log(event.target)
     this.setState({
       movieTitle: event.target.value
     })

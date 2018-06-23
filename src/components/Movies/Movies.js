@@ -10,7 +10,6 @@ class Movies extends Component {
   }
 
   handleMovieEdit = (movieIdInEdit) => {
-    console.log(movieIdInEdit)
     this.setState({
       movieIdInEdit
     })
