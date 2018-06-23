@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Movie from '../Movie/Movie'
 
 class Movies extends Component {
@@ -28,7 +28,7 @@ class Movies extends Component {
 
   render = () => {
     return (
-      <Fragment>
+      <ul>
         {
           this.props.movies && this.props.movies.map(movie =>
             <Movie
@@ -44,7 +44,7 @@ class Movies extends Component {
             />
           )
         }
-      </Fragment>
+      </ul>
     )
   }
 }

@@ -63,11 +63,13 @@ class MovieFilterForm extends Component {
     return (
       <Fragment>
         <SelectDropdown
+          label='Genre'
           value={this.state.selectedGenre}
           handleChange={this.handleChangeSelectedGenre}
           options={this.genreOptions}
         />
         <TextInput
+          label='Year'
           value={this.state.selectedYear}
           handleChange={this.handleChangeSelectedYear}
         />

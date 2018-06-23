@@ -5,7 +5,7 @@ import MovieEdit from '../MovieEdit/MovieEdit'
 import Button from '../../common/Button/Button'
 
 const Movie = ({ movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, handleMovieEdit, handleCancelEditMovie, handleSaveMovie }) => (
-  movieIdInEdit === movieId ?
+  <li>{movieIdInEdit === movieId ?
     <MovieEdit
       movieTitle={movieTitle}
       movieYear={movieYear}
@@ -23,7 +23,9 @@ const Movie = ({ movieId, movieTitle, movieYear, movieGenre, movieIdInEdit, hand
         text='Edit'
         handleClick={() => handleMovieEdit(movieId)}
       />
-    </Fragment>
+    </Fragment>}
+  </li>
+
 )
 
 Movie.propTypes = {
