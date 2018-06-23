@@ -11,6 +11,7 @@ class MovieFilterForm extends Component {
 
   constructor(props) {
     super(props)
+
     this.genreOptions = [
       {
         display: 'All',
@@ -37,6 +38,7 @@ class MovieFilterForm extends Component {
         value: 'sci-fi'
       }
     ]
+
     this.state = {
       selectedGenre: '',
       selectedYear: ''
