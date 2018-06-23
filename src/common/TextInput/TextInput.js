@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import './TextInput.css'
 
 const TextInput = ({value, handleChange, label}) => (
-  <Fragment>
+  <div className='text-input flex-container'>
     {
       label &&
       <label>{label}</label>
@@ -12,7 +13,7 @@ const TextInput = ({value, handleChange, label}) => (
       value={value}
       onChange={handleChange}
     />
-  </Fragment>
+  </div>
 )
 
 TextInput.propTypes = {

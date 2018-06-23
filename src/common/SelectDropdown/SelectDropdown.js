@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import './SelectDropdown.css'
 
 const SelectDropdown = ({value, options, handleChange, label}) => (
-  <Fragment>
+  <div className='select-input'>
     {
       label &&
       <label>{label}</label>
@@ -17,7 +18,7 @@ const SelectDropdown = ({value, options, handleChange, label}) => (
         ))
       }
     </select>
-  </Fragment>
+  </div>
 );
 
 SelectDropdown.propTypes = {

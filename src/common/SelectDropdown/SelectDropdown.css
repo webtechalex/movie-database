@@ -1,0 +1,12 @@
+.select-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.select-input label {
+  flex: 1;
+}
+
+.select-input select {
+  flex: 3;
+}

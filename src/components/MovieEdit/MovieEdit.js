@@ -67,7 +67,7 @@ class MovieEdit extends Component {
   }
 
   render = () => (
-    <Fragment>
+    <div>
       <TextInput
         label='Title'
         value={this.state.movieTitle}
@@ -84,15 +84,18 @@ class MovieEdit extends Component {
         handleChange={this.handleChangeMovieGenre}
         options={this.genreOptions}
       />
-      <Button
-        text='Cancel'
-        handleClick={this.props.handleCancelEditMovie}
-      />
-      <Button
-        text='Save'
-        handleClick={() => this.props.handleSaveMovie(this.state.movieTitle, this.state.movieYear, this.state.movieGenre)}
-      />
-    </Fragment>
+      <div className='flex-container'>
+        <Button
+          text='Cancel'
+          handleClick={this.props.handleCancelEditMovie}
+        />
+        <Button
+          text='Save'
+          className='primary'
+          handleClick={() => this.props.handleSaveMovie(this.state.movieTitle, this.state.movieYear, this.state.movieGenre)}
+        />
+      </div>
+    </div>
   )
 }
 

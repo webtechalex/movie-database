@@ -62,21 +62,28 @@ class MovieFilterForm extends Component {
   render = () => {
     return (
       <Fragment>
-        <SelectDropdown
-          label='Genre'
-          value={this.state.selectedGenre}
-          handleChange={this.handleChangeSelectedGenre}
-          options={this.genreOptions}
-        />
-        <TextInput
-          label='Year'
-          value={this.state.selectedYear}
-          handleChange={this.handleChangeSelectedYear}
-        />
-        <Button
-          text='Get Movies'
-          handleClick={this.handleGetMovies}
-        />
+        <div>
+          <SelectDropdown
+            label='Genre'
+            value={this.state.selectedGenre}
+            handleChange={this.handleChangeSelectedGenre}
+            options={this.genreOptions}
+          />
+        </div>
+        <div>
+          <TextInput
+            label='Year'
+            value={this.state.selectedYear}
+            handleChange={this.handleChangeSelectedYear}
+          />
+        </div>
+        <div>
+          <Button
+            text='Get Movies'
+            handleClick={this.handleGetMovies}
+            className='button-wide primary'
+          />
+        </div>
       </Fragment>
     )
   }
