@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --verbose -o",
+    "test:all": "jest --verbose",
     "dev": "webpack-dev-server",
     "build": "webpack"
   },
